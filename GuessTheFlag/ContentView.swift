@@ -43,7 +43,12 @@ struct ContentView: View {
                         }
                         .alert(isPresented: $gameOver) {
                             Alert(title: Text("GAME OVER"),
-                                  message: Text("You Scored \(score)"))
+                                  message: Text("You Scored \(score)"),
+                                  dismissButton: Alert.Button.default(
+                                    Text("Start a New Game"),
+                                    action: { self.resetGame() }
+                                  )
+                            )
                         }
                     }
                 }
