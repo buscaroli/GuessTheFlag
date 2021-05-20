@@ -4,6 +4,8 @@
 //
 //  Created by Matteo on 20/05/2021.
 //
+//  Based on Paul Hudson's SwiftUI by Example Tutorials
+//
 
 import SwiftUI
 
